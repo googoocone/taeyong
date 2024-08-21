@@ -45,7 +45,6 @@ const Section3 = React.forwardRef((props, ref) => {
   const handleNav = (num, event) => {
     event.preventDefault();
 
-  
     if (num === 1) {
       setProve(coin);
     } else if (num === 2) {
@@ -57,10 +56,8 @@ const Section3 = React.forwardRef((props, ref) => {
     } else {
       setProve(fraud);
     }
-  
   };
-  
-  
+
   return (
     <section ref={ref} className={styles.section}>
       <div className={styles.container}>
@@ -80,10 +77,10 @@ const Section3 = React.forwardRef((props, ref) => {
             <button onClick={(e) => handleNav(5, e)}>부동산 투자</button>
           </div>
           <div className={styles.proveContainer}>
-            {prove.map((el) => {
+            {prove.map((el, index) => {
               return (
-                <div className={styles.prove}>
-                  <img src={el.src}></img>
+                <div className={styles.prove} key={index}>
+                  <img src={el.src} alt="개인회생성공사례"></img>
                 </div>
               );
             })}
@@ -93,5 +90,5 @@ const Section3 = React.forwardRef((props, ref) => {
     </section>
   );
 });
-
+Section3.displayName = "Section3";
 export default Section3;

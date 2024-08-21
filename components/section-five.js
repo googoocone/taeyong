@@ -29,6 +29,8 @@ const Section5 = React.forwardRef((props, ref) => {
     setShowModal(false); // 모달 닫기
   };
 
+  closeModal.displayName = 'closeModal';
+
   return (
     <section ref={ref} className={styles.section}>
       <div className={styles.container}>
@@ -36,7 +38,7 @@ const Section5 = React.forwardRef((props, ref) => {
           빚에서 해방될 수 있는 순간, <span className={styles.hightlight}>딱 한번</span>의 상담이면 됩니다.
         </div>
         <div className={styles.process}>
-          <img src={process.src} alt="Process" />
+          <img src={process.src} alt="수원개인회생" />
         </div>
         <div className={styles.formContainer}>
           <form ref={formRef} className={styles.form} onSubmit={handleSubmit}>
@@ -71,5 +73,7 @@ const Section5 = React.forwardRef((props, ref) => {
     </section>
   );
 });
+
+Section5.displayName = 'Section5';
 
 export default Section5;

@@ -79,6 +79,7 @@ export default function Index() {
         handleScroll(deltaY);
       }
     };
+    handleTouchEnd.displayName = 'handleTouchEnd';
 
     window.addEventListener("wheel", handleWheel);
     window.addEventListener("touchstart", handleTouchStart);

@@ -35,12 +35,12 @@ const Section4 = React.forwardRef((props, ref) => {
               </div>
               <div className={styles.name} ><span className={styles.highlight}>김태용</span>  변호사</div>
             </div>
-            <img src={lawyer2.src}></img>
+            <img src={lawyer2.src} alt="개인회생전문변호사"></img>
           </div>
         </div>
       </section>
     </>
   );
 });
-
+Section4.displayName = 'Section4';
 export default Section4;
