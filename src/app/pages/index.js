@@ -106,6 +106,8 @@ export default function Index() {
           rel="stylesheet"
           type="text/css"
         ></link>
+
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <div className={styles.container}>
         <NavLeft onSectionClick={scrollToSection} activeIndex={activeIndex} />
