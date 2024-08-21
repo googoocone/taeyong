@@ -7,6 +7,8 @@ export default function Promise({ textDummy }) {
   const handleTitleClick = () => {
     setIsDescriptionVisible(!isDescriptionVisible);
   };
+  handleTitleClick.displayName = "handleTitleClick";
+
 
   return (
     <>
@@ -26,4 +28,3 @@ export default function Promise({ textDummy }) {
   );
 }
 
-handleTitleClick.displayName = "handleTitleClick";
