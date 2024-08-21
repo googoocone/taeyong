@@ -31,7 +31,7 @@ export default function Index() {
 
       setTimeout(() => {
         isScrolling.current = false;
-      }, 1000);
+      }, 200);
     }
   };
 
