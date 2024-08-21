@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build:start": "npm run build && pm2 start npm --name 'tymate' -- start",
+    "build:start": "npm run build && pm2 start npm --name 'next-app' -- start",
     "start": "next start",
     "lint": "next lint"
   },
