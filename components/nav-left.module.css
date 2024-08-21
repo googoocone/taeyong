@@ -1,0 +1,54 @@
+.container {
+  height: 600px;
+  position: fixed;
+  z-index: 100;
+  left: 2%;
+  top: 50%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.container ul {
+  height: 100%;
+}
+
+.container ul li {
+  width: auto;
+  height: 30px;
+  list-style: none;
+  color: white;
+  -webkit-text-stroke: 0.5px white;
+  cursor: pointer;
+  font-size: 17px;
+  margin: 40px 0;
+  position: relative;
+  display: block; /* 세로 정렬을 위해 block으로 설정 */
+  font-weight: 300;
+}
+
+.container ul li::before {
+  content: '';
+  width: 0px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: width 0.5s ease; /* 애니메이션 추가 */
+
+}
+
+.container ul li:hover::before {
+  width: 100%; /* li 요소의 너비에 맞춰 밑줄 확장 */
+  filter: drop-shadow(0 0 25px white);
+}
+.container ul li.active {
+  font-weight: 500;
+  font-size: 18px; /* 활성화된 메뉴 배경 색상 */
+  color: white; /* 활성화된 메뉴 글자 색상 */
+}
+
+@media (max-width:480px) {
+  .container{
+    display: none;
+  }
+}
