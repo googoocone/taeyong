@@ -3,8 +3,8 @@ import Head from "next/head";
 import React from "react";
 import styles from "./section-four.module.css";
 
-import lawyer1 from "../assets/lawyer1.png";
-import lawyer2 from "../assets/lawyer2.svg";
+
+import lawyer2 from "../assets/lawyer.svg";
 
 const Section4 = React.forwardRef((props, ref) => {
   return (
