@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <>
       <div className={styles.container}>
-        <img src={logo.src}></img>
+        <img src={logo.src} alt='수원개인회생'></img>
       </div>
     </>
   )
