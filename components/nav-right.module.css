@@ -35,7 +35,7 @@
     right: 0.1%;
     top : 68%;
     z-index: 100;
-    background-color: #1E1E1E;
+    background-color: transparent;
     cursor: pointer;
   }
   
@@ -52,8 +52,7 @@
   .mid {
     width: 70px;
     height: 70px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+
   }
   .mid img{
     width: 100%;
