@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/index.module.css";
 
 import NavLeft from "../../../components/nav-left";
+import NavRight from '../../../components/nav-right';
 import Section1 from "../../../components/section-one";
 import Section2 from "../../../components/section-two";
 import Section3 from "../../../components/section-three";
@@ -112,6 +113,7 @@ export default function Index() {
       </Head>
       <div className={styles.container}>
         <NavLeft onSectionClick={scrollToSection} activeIndex={activeIndex} />
+        <NavRight></NavRight>
         <Header></Header>
         <Section1 ref={(el) => (sectionRefs.current[0] = el)} />
         <Section2 ref={(el) => (sectionRefs.current[1] = el)} />
